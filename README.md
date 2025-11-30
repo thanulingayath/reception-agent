@@ -27,13 +27,12 @@ Create a `.env` file:
 ```env
 SUPABASE_URL=your_supabase_url
 SUPABASE_KEY=your_supabase_key
-DEFAULT_LANGUAGE=en-US
 ```
 
 ### 3. Run the Application
 
 ```bash
-streamlit run app.py
+python -m streamlit run app.py
 ```
 
 Open http://localhost:8501 in your browser.
@@ -113,4 +112,5 @@ See [DEPLOYMENT.md](DEPLOYMENT.md) for instructions on deploying to Streamlit Cl
 - **deep-translator** - Language translation
 - **Supabase** - Database storage
 - **pydub** - Audio processing
+
 - **watchdog** - File system monitoring
