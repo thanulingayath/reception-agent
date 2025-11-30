@@ -1,0 +1,46 @@
+# Environment variables (DO NOT UPLOAD)
+.env
+
+# IDE/Editor folders (DO NOT UPLOAD)
+.mgx/
+.vscode/
+.idea/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Virtual environments
+venv/
+env/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Database
+*.db
+*.sqlite
+
+# Temporary files
+*.tmp
+temp/
+
+# Call recordings (don't upload to GitHub)
+*.wav
+*.mp3
+*.m4a
+*.ogg
+*.webm
