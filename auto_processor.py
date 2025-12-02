@@ -125,13 +125,13 @@ def analyze_transcription_free(text, source_lang='auto'):
     
     # Format analysis
     analysis = f"""**Intent:** {intent}
-128: **Sentiment:** {sentiment}
-129: **Action Items:**
-130: {chr(10).join(f"- {item}" for item in action_items)}
-131: **Summary:** {summary}
-132: 
-133: *Processed automatically by folder watcher*
-134: """
+**Sentiment:** {sentiment}
+**Action Items:**
+{chr(10).join(f"- {item}" for item in action_items)}
+**Summary:** {summary}
+
+*Processed automatically by folder watcher*
+"""
     
     return analysis
 
