@@ -1,36 +1,3 @@
-import streamlit as st
-from supabase import create_client, Client
-import os
-from datetime import datetime
-import pandas as pd
-from audio_recorder_streamlit import audio_recorder
-
-# Hack for Python 3.13 compatibility (missing aifc)
-import sys
-if sys.version_info >= (3, 13):
-    try:
-        import aifc
-    except ImportError:
-        import sys
-        # If standard aifc is missing, try to use the backport or mock it
-        try:
-            # Try to import from py-aifc if installed but named differently
-            # Note: py-aifc installs as 'aifc' usually, but let's be safe
-            pass
-        except:
-            pass
-            
-    # Force mock if still missing
-    if 'aifc' not in sys.modules:
-        import types
-        sys.modules['aifc'] = types.ModuleType('aifc')
-        sys.modules['aifc'].Error = Exception
-
-import speech_recognition as sr
-import tempfile
-from dotenv import load_dotenv
-import io
-from pydub import AudioSegment
 from deep_translator import GoogleTranslator
 
 # Load environment variables
